@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 #define ent  3   // funcionnamiento manual o app
-#define ent1 4   //Sensor de Temperatura
+#define sen  4   //Sensor de Temperatura
 #define bos  5   //Bosina 
 #define ret  6   //Rele resistencia
 #define dis  7   //Rele disipador 
