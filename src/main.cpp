@@ -1,6 +1,8 @@
 #include <Arduino.h>
 
-#define ent 3
+#define ent 3   //
+#define ent1 4 //funcionnamiento manual o app
+
 int pinLed=2;
 int n=2,c,d,i ;
 
