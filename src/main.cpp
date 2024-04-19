@@ -3,8 +3,8 @@
 #define ent  3   // funcionnamiento manual o app
 #define ent1 4   //Sensor de Temperatura
 #define bos  5   //Bosina 
-#define ret  6
-#define dis  7
+#define ret  6   //Rele resistencia
+#define dis  7   //Rele disipador 
 
 int pinLed=2;
 int n=2,c,d,i ;
@@ -22,17 +22,18 @@ c=5;
 }
 
 void loop() {
-  switch (ent){
-case 1 : // Funcionamiento manual 
- Serial.print("Maual");
-  while (c==5)
-  {
-  }
+switch (ent){
+ case 1 : // Funcionamiento manual 
+  Serial.print("Maual");
+   while (c==5)
+    {
+    
+    }
   break;
-case 2 :  // Fucinamiento Remoto 
- Serial.print("Remoto");
- break;
-default: // Error de funcionamiento 
+ case 2 :  // Fucinamiento Remoto 
+  Serial.print("Remoto");
+  break;
+ default: // Error de funcionamiento 
  Serial.print("Error");
  
  return;// salir del  selector 
