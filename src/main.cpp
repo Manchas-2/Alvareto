@@ -45,5 +45,5 @@ void loop() {
     Serial.print ("n es diferente de c");
     Serial.println (d);
    }
-}
+}//comprobando que si este funcionando el cambiando
 
