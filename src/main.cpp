@@ -68,3 +68,4 @@ switch (fn){
   digitalWrite (pinLed, LOW);
    Serial.println ("OFF");
    delay(1000);
+}
