@@ -60,7 +60,7 @@ void loop() {
        Serial.println("Listo.");
       }
     break;
-  case 2 :  // Fucinamiento Remoto 
+  case 2 :  // Fucinamiento Remoto pendiente confi funciones 
    Serial.print("Remoto");
      while(SerialBT.available()  ) {
      valor = SerialBT.read();
