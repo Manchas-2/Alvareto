@@ -42,21 +42,26 @@ void loop() {
     while (temp < mx )   //funciona hasta que la sen no supere la temperatura 
      { Serial.print("Temperatura= ");
        Serial.print(temp);
-       Serial.println(" C");
+       Serial.println(" °C");
        digitalWrite ( ret , HIGH );
-       delay (3500);
+       delay (1750);
        digitalWrite ( ret , LOW );
-       delay (5000);
-       Serial.println("Claentando...");
+       delay (350);
+       Serial.print("Calentando");
+       serial.print(". ");
+       delay (150);
+       serial.print(". ");
+       delay (150);
+       serial.println(". ");
+       
      }
-    while(temp >= mx ) { 
+    while(temp > mx ) { 
        Serial.print("Temperatura= ");
        Serial.print(temp);
-       Serial.println(" C");
+       Serial.println(" °C");
        digitalWrite ( dis , HIGH );
-       delay (3500);
+       delay (3000);
        digitalWrite ( dis , LOW );
-       delay (5000);
        Serial.println("Listo.");
       }
     break;
@@ -68,19 +73,24 @@ void loop() {
      while (temp < mx ) {  //funciona hasta que la sen no supere la temperatura  
        Serial.print("Temperatura= ");
        Serial.print(temp);
-       Serial.println(" C");
+       Serial.println(" °C");
        digitalWrite ( ret , HIGH );
        delay (3500);
        digitalWrite ( ret , LOW );
        delay (5000);
-       Serial.println("Claentando...");
+       Serial.print("Calentando");
+       serial.print(". ");
+       delay (150);
+       serial.print(". ");
+       delay (150);
+       serial.println(". ");
       }
     }
     else if (valor == '2' ){
-     while(temp >= mx ) {
+     while(temp > mx ) {
        Serial.print("Temperatura= ");
        Serial.print(temp);
-       Serial.println(" C");
+       Serial.println(" °C");
        digitalWrite ( dis , HIGH );
        delay (3500);
        digitalWrite ( dis , LOW );
@@ -93,7 +103,7 @@ delay(1000);
 
    break;
   default: // Error de funcionamiento 
-   Serial.print("Error");
+   Serial.print("Sistema deshabilitado");
    
    return;// salir del  selector 
    break;
