@@ -29,10 +29,10 @@ void setup() {
 
 void loop() {
  if (digitalRead( ent) == HIGH ) {//Definir como va a funcionar manual o app 
-     fn = 1 ;
+     fn = 2 ;
     }
   else if (digitalRead(mn)== HIGH ){
-     fn = 2 ;
+     fn = 1 ;
     }
   sensors.requestTemperatures();   //Se envía el comando para leer la temperatura
   temp= sensors.getTempCByIndex(0); //se almacena la temperatura
