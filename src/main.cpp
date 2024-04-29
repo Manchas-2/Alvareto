@@ -53,6 +53,8 @@ void loop() {
        Serial.print(". ");
        delay (150);
        Serial.println(". ");
+      sensors.requestTemperatures();   //Se toma nuevamente la temperatura 
+      temp = sensors.getTempCByIndex(0);
        
      }
     while(temp > mx ) { 
@@ -63,6 +65,8 @@ void loop() {
        delay (3000);
        digitalWrite ( dis , LOW );
        Serial.println("Listo.");
+       sensors.requestTemperatures();   //Se toma nuevamente la temperatura 
+       temp = sensors.getTempCByIndex(0);
       }
     break;
   case 2 :  // Fucinamiento Remoto pendiente confi funciones 
@@ -84,6 +88,8 @@ void loop() {
        Serial.print(". ");
        delay (150);
        Serial.println(". ");
+       sensors.requestTemperatures();   //Se toma nuevamente la temperatura 
+       temp = sensors.getTempCByIndex(0);
       }
     }
     else if (valor == '2' ){
@@ -96,6 +102,8 @@ void loop() {
        digitalWrite ( dis , LOW );
        delay (5000);
        Serial.println("Listo.");
+       sensors.requestTemperatures();   //Se toma nuevamente la temperatura 
+       temp = sensors.getTempCByIndex(0);
        }
     }
 delay(1000);
