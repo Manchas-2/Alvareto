@@ -48,11 +48,11 @@ void loop() {
        digitalWrite ( ret , LOW );
        delay (350);
        Serial.print("Calentando");
-       serial.print(". ");
+       Serial.print(". ");
        delay (150);
-       serial.print(". ");
+       Serial.print(". ");
        delay (150);
-       serial.println(". ");
+       Serial.println(". ");
        
      }
     while(temp > mx ) { 
@@ -79,11 +79,11 @@ void loop() {
        digitalWrite ( ret , LOW );
        delay (5000);
        Serial.print("Calentando");
-       serial.print(". ");
+       Serial.print(". ");
        delay (150);
-       serial.print(". ");
+       Serial.print(". ");
        delay (150);
-       serial.println(". ");
+       Serial.println(". ");
       }
     }
     else if (valor == '2' ){
